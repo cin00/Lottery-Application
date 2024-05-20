@@ -27,8 +27,8 @@ using Windows.UI.Xaml.Navigation;
  * 
  * - Varför HashSets?
  *   Jag började lösa uppgiften enbart med List men insåg snabbt problematiken med att ej tillåta dubbletter samt att ordning ej spelar roll.
- *   Jag minns att jag lärde mig om HashSets<E> i en Java-kurs jag läst tidigare (DVGA02) och eftersom C# har visat sig varit väldigt likt Java så började jag göra research (se referenser)
- *   Eftersom HashSet är en mängd där ordning inte spelar roll, och dubbletter ej tillåts så kändes det som ett självklart val.
+ *   Jag minns att jag lärde mig om HashSets<E> och eftersom HashSet är en mängd där ordning inte spelar roll,
+ *   och dubbletter ej tillåts så kändes det som ett självklart val.
  *   Det fanns även inga krav om hur resurseffektivt programmet behövde vara.
  * 
  * 
@@ -53,9 +53,9 @@ namespace Labb2_Lotto
         private int intInput; //Textinput konverterad till int
         private bool validInput; //Kontroll om input är ok
         private bool validNrOfDraws; //Kontroll om antalet dragningar är ok
-        private int minValue; //Minsta tillåtna värde -> 1
-        private int maxValue; //Högsta tillåtna värde -> 35
-        private int rowLength; //Antalet siffror i en rad -> 7
+        private const int minValue = 1; //Minsta tillåtna värde -> 1
+        private const int maxValue = 35; //Högsta tillåtna värde -> 35
+        private const int rowLength = 7; //Antalet siffror i en rad -> 7
         private int nrOfDraws; //Antalet dragningar  n > 0
 
         public MainPage()
@@ -65,9 +65,6 @@ namespace Labb2_Lotto
             //Initialisering
             myLotteryRow = new HashSet<int>();
             intInput = -1;
-            minValue = 1;
-            maxValue = 35;
-            rowLength = 7;
             nrOfDraws = 0;
             SevenCorrect.Text = "0";
             SixCorrect.Text = "0";
