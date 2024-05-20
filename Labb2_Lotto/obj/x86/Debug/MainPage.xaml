@@ -1,0 +1,44 @@
+﻿<Page
+    x:Class="Labb2_Lotto.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Labb2_Lotto"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"></RowDefinition>
+        <RowDefinition Height="Auto"></RowDefinition>
+        <RowDefinition Height="Auto"></RowDefinition>
+        <RowDefinition Height="Auto"></RowDefinition>
+        <RowDefinition Height="Auto"></RowDefinition>
+    </Grid.RowDefinitions>
+
+    <!-- ROW ONE -->
+    <TextBlock Grid.Row="0" FontSize="30" Margin="30,40,0,0">Din lottorad:</TextBlock>
+    <TextBox x:ConnectionId='2' Name="Number1" Background="White" Foreground="Black" Grid.Row="0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="210,40,0,0" Width="100" Height="50"></TextBox>
+    <TextBox x:ConnectionId='3' Name="Number2" Background="White" Foreground="Black" Grid.Row="0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="350,40,0,0" Width="100" Height="50"></TextBox>
+    <TextBox x:ConnectionId='4' Name="Number3" Background="White" Foreground="Black" Grid.Row="0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="490,40,0,0" Width="100" Height="50"></TextBox>
+    <TextBox x:ConnectionId='5' Name="Number4" Background="White" Foreground="Black" Grid.Row="0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="630,40,0,0" Width="100" Height="50"></TextBox>
+    <TextBox x:ConnectionId='6' Name="Number5" Background="White" Foreground="Black" Grid.Row="0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="770,40,0,0" Width="100" Height="50"></TextBox>
+    <TextBox x:ConnectionId='7' Name="Number6" Background="White" Foreground="Black" Grid.Row="0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="910,40,0,0" Width="100" Height="50"></TextBox>
+    <TextBox x:ConnectionId='8' Name="Number7" Background="White" Foreground="Black" Grid.Row="0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="1050,40,0,0" Width="100" Height="50"></TextBox>
+    <!-- ROW TWO -->
+    <TextBlock Grid.Row="1" FontSize="30" Margin="30,60,0,0">Antal dragningar:</TextBlock>
+    <TextBox x:ConnectionId='9' Name="NrOfDraws" MaxLength="7" Background="White" Foreground="Black" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Width="150" Height="50" Margin="350,60,0,0"></TextBox>
+    <Button x:ConnectionId='10' Grid.Row="1" Background="CornflowerBlue"                      VerticalAlignment="Top" Margin="630,60,0,0" Width="100" Height="50">Starta</Button>
+    <!-- ROW THREE -->
+    <TextBlock Grid.Row="2" FontSize="30" Margin="30,60,0,0">5 rätt:</TextBlock>
+    <TextBlock x:ConnectionId='11' Name="FiveCorrect" FontSize="25" Grid.Row="2" Text="0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="100" Height="50" Margin="210,60,0,0"></TextBlock>
+    <!-- ROW FOUR -->
+    <TextBlock Grid.Row="3" FontSize="30" Margin="30,60,0,0">6 rätt:</TextBlock>
+    <TextBlock x:ConnectionId='12' Name="SixCorrect" FontSize="25" Grid.Row="3" Text="0" HorizontalAlignment="Left" Width="100" Height="50" Margin="210,60,0,0"></TextBlock>
+    <!-- ROW FIVE -->
+    <TextBlock Grid.Row="4" FontSize="30" Margin="30,60,0,0">7 rätt:</TextBlock>
+    <TextBlock x:ConnectionId='13' Name="SevenCorrect" FontSize="25" Grid.Row="4" Text="0" HorizontalAlignment="Left" Width="100" Height="50" Margin="210,60,0,0"></TextBlock>
+</Grid>
+</Page>
+
